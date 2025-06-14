@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Itens/Mês<th>Janeiro</th><th>Fevereiro</th><th>Março</th></td>
+        </tr>
+        <tr>
+            <th>Usuarios</th><td>80<td>93</td><td>120</td>
+        </tr>
+            <th>Linhas</th><td>3<td>3</td><td>5</td>
+    </tr>
+    </table>
+
+<br/>
+
+<h1>Tabela-Parâmetro</h1>
+<table border="1">
+    <tr>
+        <td rowspan=3>3 Linhas</td>
+        <td>col 2</td><td>col 3</td>
+        <td>col 4</td><td>col 5</td>
+    </tr>
+    <tr>
+        <td>col 2</td><td>col 3</td>
+        <td>col 4</td><td>col 5</td>
+    </tr>
+    <tr>
+        <td>col 2</td><td>col 3</td>
+        <td>col 4</td><td>col 5</td>
+    </tr>
+</table>
+
+<br/>
+
+<h1>Tabela-Parâmetro Coluna</h1>
+<table border>
+    <tr>
+        <td colspan=2>2 colunas</td>
+        <td>col 3</td><td>col 4</td><td>col 5</td>
+    </tr>
+    <tr>
+        <td>col 1</td>
+        <td>col 2</td><td>col 3</td>
+        <td>col 4</td><td>col 5</td>
+    </tr>
+    <tr>
+        <td>col 1</td>
+        <td>col 2</td><td>col 3</td>
+        <td>col 4</td><td>col 5</td>
+    </tr>
+</table>
+
+<br/>
+
+<H1>Formulario</H1>
+<form method="Post" Action="/cgi-bin/post-query">
+    Qual o seu primeiro nome?
+    <input type="text" NAME="primeiro_nome"value="carlos">
+    Informe sua senha de acesso (8 caracteres)
+    <input type="password" NAME="sua_senha" size="8" maxlength="8">
+    Você não pode vizualizar nada aqui embaixo
+    <input type="hidden" NAME="nome_oculto" value="form12 ">
+    Por favor, escreva aqui suas sugestões, duvidas e criticas:<br/>
+    <textarea name="critica" rows="3" cols="40">
+        Gostaria de obter mais informações sobre
+        este servidor. Grato
+    </textarea>
+    <br/>
+    <br/>
+    Onde Você pretende fazer turismo nas férias?
+    <select name="lugares_para_ver">
+        <option>Fortaleza</option>
+        <option value="sul">Florianópolis ou Porto Alegre</option>
+        <option>Rio de Janeiro</option>
+        <option selected>Brasilia</option>
+        <option value="Amazonia">Manaus</option>
+    </select>
+    Que facilidades de acomodação você deseja?<br>
+    <select name="opcional" multiple size="5">
+        <option>Televisão</option>
+        <option value="casal" selected>Cama de casal</option>
+        <option>Ar Condicional</option>
+        <option>Fax</option>
+        <option selected>Modem V.34</option>
+        <option>Sauna</option>
+        <option>Lavanderia</option>
+        <option value="Amazonia">Manaus</option>
+    </select>
+</form>
+<br/>
+<form action="/action_page.html">
+<input type="checkbox" name="vehicle1" value="Bike"/> I have a bike<br/>
+<input type="checkbox" name="vehicle2" value="Car"/> I have a car<br/>
+<input type="checkbox" name="veihcle3" value="Boat"/> I have a boat<br/>
+<input type="submit" value="submit"/>
+</form>
+
+<br/>
+<form action="/action_page.html">
+    <p> Please select your gender</p>
+    <input type="radio" name="gender" value="male"/> Male<br/>
+    <input type="radio" name="gender" value="female"/> Female<br/>
+    <input type="radio" name="gender" value="other"/> Other<br/>
+
+    <p> Please select your age</p>
+    <input type="radio" name="age" value="30"/> 0 - 30 <br/>
+    <input type="radio" name="age" value="60"/> 31 - 60<br/>
+    <input type="radio" name="age" value="100"/> 61 - 100<br/>
+</form>
+<address>
+    Vitor Gulicz/ HTML / Senai / Joiville
+</address>   
+</body>
+</html>
